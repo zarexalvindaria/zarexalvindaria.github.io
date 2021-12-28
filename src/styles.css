@@ -1,12 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 /*
 COLOR PALETTE
-https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
-#F7FFF7 - almost white
-#343434 - dark gray - almost black
-#2F3061 - blue dark
-#FFE66D - yellow
-#A1C6D7 - blue light
+#F4F4F0 - almost white
+#393D43 - dark gray - almost black
+#24292e - GitHub dark mode
+#c9d1d9 - GitHub white
 */
 
 /* Global styles
@@ -21,10 +19,9 @@ html {
 }
 
 body {
-  color: #343434;
+  color: #393d43;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -38,27 +35,46 @@ a:hover {
   text-decoration: none;
 }
 h1 {
-  font-size: 100px;
-  line-height: 1;
+  font-family: "Caudex", serif;
+  font-weight: 500;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  opacity: 0.9;
+  color: #ffffff;
 }
-h2 {
-  font-size: 45px;
+h1.full-name {
+  text-align: center;
 }
-h1,
+
 h2 {
-  font-family: "Caveat", cursive;
-  font-weight: 400;
-  margin: 0;
+  font-family: Inter, serif;
+  font-weight: 700;
+  font-size: 22px;
 }
 .content-wrap {
   max-width: 800px;
   width: 85%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 30px 0;
 }
 h3 {
-  margin-bottom: 0;
+  font-family: Inter, serif;
+  font-weight: 200;
+  margin-top: 0px !important;
+  margin-bottom: 30px;
+  font-size: 26px;
 }
+h3.job-title {
+  text-align: center;
+}
+
+p {
+  font-style: Inter, serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
 .item-details h3 + p {
   font-style: italic;
 }
@@ -74,14 +90,23 @@ h3 {
 }
 
 /* Profile
-  ------------------------------------*/
+      ------------------------------------*/
 header {
-  background: #2f3061;
+  background: #040404;
   color: #f7fff7;
 }
 
+.fa {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.fa:hover {
+  color: #39d353;
+}
+
 /* Projects
-  ------------------------------------*/
+      ------------------------------------*/
 .projects {
   background: #f7fff7;
 }
@@ -107,15 +132,15 @@ header {
 }
 
 /* Work Experience
-  ------------------------------------*/
+      ------------------------------------*/
 .work-experience {
   background: #a1c6d7;
 }
 
 /* Education
-  ------------------------------------*/
+      ------------------------------------*/
 .education {
-  background-image: url(/images/joanna-kosinska-unsplash.jpg);
+  background-image: url(assets/images/joanna-kosinska-unsplash.jpg);
   background-size: cover;
   background-position: top right;
   padding-bottom: 100px;
@@ -125,9 +150,9 @@ header {
 }
 
 /* Contact Info
-  ------------------------------------*/
+      ------------------------------------*/
 footer {
-  background: #343434;
+  background: #040404;
   color: #f7fff7;
 }
 .contact-list {
@@ -139,8 +164,18 @@ footer {
   display: inline-block;
 }
 
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
 /* Responsive
-  ------------------------------------*/
+      ------------------------------------*/
 @media screen and (min-width: 750px) {
   header,
   footer {
@@ -166,7 +201,7 @@ footer {
   h1 {
     font-size: 75px;
     line-height: 0.9;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
   h2 {
     line-height: 1;
