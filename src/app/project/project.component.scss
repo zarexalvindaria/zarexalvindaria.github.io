@@ -11,9 +11,18 @@ h2.projects {
 
 .project-item img {
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .projects {
   background: #ffffff;
+}
+
+p {
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.divider > section {
+  border-bottom: 0;
+  padding: 40px 0;
 }
