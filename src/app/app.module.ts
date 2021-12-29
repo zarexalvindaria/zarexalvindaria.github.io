@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { EducationComponent } from './education/education.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectComponent } from './project/project.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -15,12 +16,9 @@ import { ProjectComponent } from './project/project.component';
     EducationComponent,
     FooterComponent,
     ProjectComponent
-    
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ProjectComponent]
 })
 export class AppModule { }
