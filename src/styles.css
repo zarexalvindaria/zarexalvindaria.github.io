@@ -5,7 +5,6 @@ COLOR PALETTE
 #393D43 - dark gray - almost black
 #24292e - GitHub dark mode
 #c9d1d9 - GitHub white
-#161B22 - GitHub code dark
 */
 
 /* Global styles
@@ -51,12 +50,7 @@ h1.full-name {
 h2 {
   font-family: Inter, serif;
   font-weight: 700;
-  font-size: 28px;
-}
-h2.education {
-  color: #c9d1d9;
-  text-align: center;
-  padding-bottom: 30px;
+  font-size: 22px;
 }
 .content-wrap {
   max-width: 800px;
@@ -66,18 +60,13 @@ h2.education {
 }
 h3 {
   font-family: Inter, serif;
-  font-weight: 400;
+  font-weight: 200;
   margin-top: 0px !important;
   margin-bottom: 30px;
   font-size: 26px;
 }
-h3.job-title,
-h2.projects {
+h3.job-title {
   text-align: center;
-}
-h3.education {
-  color: #c9d1d9;
-  padding-bottom: 0px;
 }
 
 p {
@@ -87,9 +76,7 @@ p {
 }
 
 .item-details h3 + p {
-  font-family: Inter, serif;
-  font-weight: 400;
-  color: #c9d1d9;
+  font-style: italic;
 }
 .item-details h3 ~ p {
   margin: 0;
@@ -143,9 +130,6 @@ header {
 .project-item h3 {
   margin-top: 0;
 }
-.project-item img {
-  width: 50%;
-}
 
 /* Work Experience
       ------------------------------------*/
@@ -156,16 +140,13 @@ header {
 /* Education
       ------------------------------------*/
 .education {
-  /*background-image: url(assets/images/joanna-kosinska-unsplash.jpg); 
-  background-size: cover; 
+  background-image: url(assets/images/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
   background-position: top right;
-  */
-  background: #161b22;
   padding-bottom: 100px;
 }
 .education p {
-  width: 90%;
-  color: #c9d1d9;
+  width: 60%;
 }
 
 /* Contact Info
