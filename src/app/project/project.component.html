@@ -4,9 +4,38 @@
 
     <!-- Project 1 -->
     <section class="project-item">
-      <!-- <img [src]="images[2]" alt="Random first slide" /> -->
-      <img [src]="images[0]" alt="TechTrends" />
+      <!-- Start Carousel of Images -->
+      <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="carousel-img-wrapper">
+            <img [src]="techtrends[0]" alt="GitHub Actions" />
+          </div>
+          <div class="carousel-caption">
+            <h3>GitHub Actions</h3>
+            <p>
+              Used Continuous Integration (CI) via GitHub Actions to build, tag,
+              and push the TechTrends Docker image to DockerHub.
+            </p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="carousel-img-wrapper">
+            <img [src]="techtrends[1]" alt="ArgoCD" />
+          </div>
+          <div class="carousel-caption">
+            <h3 class="argo-cd">Continuous Delivery with ArgoCD</h3>
+            <p class="argo-cd">
+              Used ArgoCD for Continuous Delivery--to release the TechTrends app
+              to staging and production environments using templated manifests
+              from the Helm chart.
+            </p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+      <!-- End Carousel -->
+
       <h3>TechTrends</h3>
+
       <p>
         TechTrends is an online news-sharing platform that enables access to the
         latest news within the cloud-native ecosystem. It is written using the
