@@ -9,7 +9,9 @@ export class ProjectComponent implements OnInit {
   images = [`techtrends-cicd`, `udaconnect-preview`, `observability-dashboard`, 
             `hardened-microservice-monitor`, `techtrends-github-actions`].map((n) => `assets/images/${n}.png`);
 
-  constructor() { }
+            
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
