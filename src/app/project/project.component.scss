@@ -48,3 +48,15 @@ ngb-carousel .carousel-img-wrapper > img {
 .argo-cd {
   color: #393d43;
 }
+
+/* Responsive Layout
+--------------------------------*/
+
+@media screen and (max-width: 749px) {
+  .carousel-caption p {
+    display: none;
+  }
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
+}
