@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   fullName = 'Zarex Alvin Daria';
+  jobTitle = 'Cloud Native Application Architect & Developer';
+  githubURL = 'https://github.com/zarexalvindaria';
+  linkedinURL = 'https://linkedin.com/in/zarexalvindaria';
   
 
   constructor() { }
