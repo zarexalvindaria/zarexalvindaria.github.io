@@ -5,10 +5,10 @@
     <!-- Project 1 -->
     <section class="project-item">
       <!-- Start Carousel of Images -->
-      <ngb-carousel *ngIf="images">
+      <ngb-carousel *ngIf="techtrendsImages">
         <ng-template ngbSlide>
           <div class="carousel-img-wrapper">
-            <img [src]="techtrends[0]" alt="GitHub Actions" />
+            <img [src]="techtrendsImages[0]" alt="GitHub Actions" />
           </div>
           <div class="carousel-caption">
             <h3>GitHub Actions</h3>
@@ -20,7 +20,7 @@
         </ng-template>
         <ng-template ngbSlide>
           <div class="carousel-img-wrapper">
-            <img [src]="techtrends[1]" alt="ArgoCD" />
+            <img [src]="techtrendsImages[1]" alt="ArgoCD" />
           </div>
           <div class="carousel-caption">
             <h3 class="argo-cd">Continuous Delivery with ArgoCD</h3>
@@ -35,6 +35,16 @@
       <!-- End Carousel -->
 
       <h3>TechTrends</h3>
+      <button
+        type="button"
+        class="btn btn-dark"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Kubernetes"
+        *ngFor="let tag of techtrendsTags"
+      >
+        {{ tag }}
+      </button>
 
       <p>
         TechTrends is an online news-sharing platform that enables access to the
@@ -71,7 +81,7 @@
 
     <!-- Project 2 -->
     <section class="project-item">
-      <img [src]="images[1]" alt="Udaconnect" />
+      <img [src]="udaconnectImages[0]" alt="Udaconnect" />
       <h3>Udaconnect (Message Passing & Refactoring)</h3>
       <p>
         Udaconnect is an application running in Flask that uses location data
@@ -100,7 +110,7 @@
 
     <!-- Project 3 -->
     <section class="project-item">
-      <img [src]="images[2]" alt="Observability" />
+      <img [src]="observabilityImages[0]" alt="Observability" />
       <h3>Observability & Metrics Dashboard</h3>
       <p>
         In this project, I created dashboards that use multiple graphs to
@@ -127,7 +137,7 @@
 
     <!-- Project 4 -->
     <section class="project-item">
-      <img [src]="images[3]" alt="Hardened Microservice" />
+      <img [src]="msecurityImages[0]" alt="Hardened Microservice" />
       <h3>Hardened Microservice</h3>
       <p>
         In this project, I have applied what I learned about STRIDE to threat

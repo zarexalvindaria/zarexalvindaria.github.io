@@ -8,15 +8,28 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
-  techtrends = ['github-actions', 'cicd'].map((n) => `assets/images/techtrends/${n}.png`);
-  udaconnect = [].map((n) => 'assets/images/udaconnect/${n}.png');
-  observability = [].map((n) => 'assets/images/observability/${n}.png');
-  msecurity = [].map((n) => 'assets/images/msecurity/${n}.png');
-  images = [`techtrends-cicd`, `udaconnect-preview`, `observability-dashboard`, 
-            `hardened-microservice-monitor`, `techtrends-github-actions`].map((n) => `assets/images/${n}.png`);
+  techtrendsImages = ['github-actions', 'cicd'].map((n) => `assets/images/techtrends/${n}.png`);
+  udaconnectImages = ['app-preview'].map((n) => `assets/images/udaconnect/${n}.png`);
+  observabilityImages = ['dashboard'].map((n) => `assets/images/observability/${n}.png`);
+  msecurityImages = ['monitoring'].map((n) => `assets/images/msecurity/${n}.png`);
 
-            
-  constructor() {
+  techtrendsTags = [
+    'kubernetes', 'docker', 'argocd', 'python'
+  ]
+
+  udaconnectTags = [
+
+  ]
+
+  observabilityTags = [
+
+  ]
+
+  msecurityTags = [
+    
+  ]
+
+  constructor() {  
   }
 
   ngOnInit(): void {

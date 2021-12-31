@@ -1,6 +1,11 @@
 <main>
   <!-- ***************  ABOUT / PROFILE  **************** -->
-  <app-header></app-header>
+  <app-header
+    [fullName]="zarexalvindaria.fullName"
+    [jobTitle]="zarexalvindaria.jobTitle"
+    [linkedinURL]="zarexalvindaria.linkedinURL"
+    [githubURL]="zarexalvindaria.githubURL"
+  ></app-header>
 
   <!-- ************ PROJECTS / PORTFOLIO  ************** -->
   <app-project></app-project>

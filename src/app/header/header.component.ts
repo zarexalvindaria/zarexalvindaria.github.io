@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  fullName = 'Zarex Alvin Daria';
-  jobTitle = 'Cloud Native Application Architect & Developer';
-  githubURL = 'https://github.com/zarexalvindaria';
-  linkedinURL = 'https://linkedin.com/in/zarexalvindaria';
+
+  @Input() zarexalvindaria = '';
+  @Input() fullName = '';
+  @Input() jobTitle = '';
+  @Input() githubURL = '';
+  @Input() linkedinURL = '';
   
 
   constructor() { }
