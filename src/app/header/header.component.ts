@@ -7,11 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Input() zarexalvindaria = '';
-  @Input() fullName = '';
-  @Input() jobTitle = '';
-  @Input() githubURL = '';
-  @Input() linkedinURL = '';
+  @Input() name = '';
+  @Input() title = '';
+  @Input() github = '';
+  @Input() linkedin = '';
   
 
   constructor() { }
