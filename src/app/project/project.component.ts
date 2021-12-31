@@ -14,13 +14,13 @@ export class ProjectComponent implements OnInit {
       id: 'techtrends',
       image: [
         {
-          imageURL: 'github-actions',
+          imageName: 'github-actions',
           captionHead: 'GitHub Actions',
           caption:
             'Used Continuous Integration (CI) via GitHub Actions to build, tag, and push the TechTrends Docker image to DockerHub.',
         },
         {
-          imageURL: 'cicd',
+          imageName: 'cicd',
           captionHead: 'Continuous Delivery with ArgoCD',
           caption:
             'Used ArgoCD for Continuous Delivery--to release the TechTrends app to staging and production environments using templated manifests from the Helm chart.',
@@ -76,8 +76,8 @@ export class ProjectComponent implements OnInit {
       id: 'udaconnect',
       image: [
         {
-          imageURL: 'app-preview',
-          captionHead: '',
+          imageName: 'app-preview',
+          captionHead: 'Udaconnect App',
           caption: '',
         },
       ],
@@ -127,8 +127,8 @@ export class ProjectComponent implements OnInit {
       id: 'observability',
       image: [
         {
-          imageURL: 'dashboard',
-          captionHead: '',
+          imageName: 'dashboard',
+          captionHead: 'Observability Dashboard',
           caption: '',
         },
       ],
@@ -172,8 +172,8 @@ export class ProjectComponent implements OnInit {
       id: 'msecurity',
       image: [
         {
-          imageURL: 'monitoring',
-          captionHead: '',
+          imageName: 'monitoring',
+          captionHead: 'Grafana Security Monitoring',
           caption: '',
         },
       ],
@@ -192,82 +192,29 @@ export class ProjectComponent implements OnInit {
         'trivy',
         'grype',
       ],
-      description:
-        "<p>In this project, I have applied what I learned about STRIDE to threat model a microservices environment. Then, I defined its security architecture and its attack surfaces. </p> <p>Next, I hardened the application's Docker environment using Docker-bench. I also created an RKE cluster and walked through a testing methodology to harden a Kubernetes cluster.</p> <p>I then hardened and deployed a Flask application after identifying and remediating its vulnerable libraries and code using Grype and Trivy.</p><p>Afterward, I implemented runtime monitoring using Grafana to visualize runtime security alerts via Sysdig Falco.</p><p>I ran an unknown payload containing malicious commands into the Kubernetes cluster to simulate a security incident. Then, I remediated the incident, documented, and prepared an incident response report to be submitted to a Chief Technology Officer—describing the incident, its impact, and the remediation steps taken.</p>",
+      description: `<p> In this project, I have applied what I learned about STRIDE to threat 
+        model a microservices environment. Then, I defined its security architecture 
+        and its attack surfaces.
+        
+        </p> <p>Next, I hardened the application's Docker 
+        environment using Docker-bench. I also created an RKE cluster and walked 
+        through a testing methodology to harden a Kubernetes cluster.</p>
+        
+        <p>I then 
+        hardened and deployed a Flask application after identifying and remediating 
+        its vulnerable libraries and code using Grype and Trivy.</p>
+        
+        <p>Afterward, 
+        I implemented runtime monitoring using Grafana to visualize runtime security 
+        alerts via Sysdig Falco.</p>
+        
+        <p>I ran an unknown payload containing malicious 
+        commands into the Kubernetes cluster to simulate a security incident. Then, I 
+        remediated the incident, documented, and prepared an incident response report 
+        to be submitted to a Chief Technology Officer—describing the incident, its 
+        impact, and the remediation steps taken.</p>`,
     },
   ];
-
-  techtrendsImages = ['github-actions', 'cicd'].map(
-    (n) => `assets/images/techtrends/${n}.png`
-  );
-  udaconnectImages = ['app-preview'].map(
-    (n) => `assets/images/udaconnect/${n}.png`
-  );
-  observabilityImages = ['dashboard'].map(
-    (n) => `assets/images/observability/${n}.png`
-  );
-  msecurityImages = ['monitoring'].map(
-    (n) => `assets/images/msecurity/${n}.png`
-  );
-
-  projectKeywords = {
-    techtrends: [
-      'python',
-      'docker',
-      'kubernetes',
-      'flask',
-      'helm',
-      'cloud-native',
-      'dockerhub',
-      'cicd',
-      'argocd',
-      'github-actions',
-      'k3s',
-      'vagrant',
-    ],
-    observability: [
-      'grafana',
-      'suse',
-      'prometheus',
-      'slo',
-      'cloud-native',
-      'observability',
-      'jaeger',
-      'jaeger-tracing',
-      'kubernetes',
-      'vagrant',
-    ],
-    udaconnect: [
-      'python',
-      'docker',
-      'kubernetes',
-      'flask',
-      'kafka',
-      'microservice',
-      'rest-api',
-      'postgresql',
-      'grpc',
-      'cloud-native',
-      'refactoring',
-      'message-passing',
-      'monolith-architecture',
-    ],
-    msecurity: [
-      'docker',
-      'kubernetes',
-      'flask',
-      'security',
-      'microservice',
-      'grafana',
-      'cloud-native',
-      'hardening',
-      'falco',
-      'stride',
-      'rke',
-      'trivy',
-      'grype',
-    ],
-  };
 
   constructor() {}
 

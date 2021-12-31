@@ -13,15 +13,12 @@
         <ng-template ngbSlide *ngFor="let image of projects[i].image">
           <div class="carousel-img-wrapper">
             <img
-              src="assets/images/{{ project.id }}/{{ image.imageURL }}.png"
+              src="assets/images/{{ project.id }}/{{ image.imageName }}.png"
               alt="GitHub Actions"
             />
           </div>
           <div class="carousel-caption">
             <h3>{{ image.captionHead }}</h3>
-            <p>
-              {{ image.caption }}
-            </p>
           </div>
         </ng-template>
       </ngb-carousel>
