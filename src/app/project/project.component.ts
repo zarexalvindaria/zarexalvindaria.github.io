@@ -77,7 +77,7 @@ export class ProjectComponent implements OnInit {
       image: [
         {
           imageName: 'app-preview',
-          captionHead: 'Udaconnect App',
+          captionHead: 'UdaConnect App',
           caption: '',
         },
       ],

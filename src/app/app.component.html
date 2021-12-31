@@ -1,10 +1,10 @@
 <main>
   <!-- ***************  ABOUT / PROFILE  **************** -->
   <app-header
-    [name]="zarexalvindaria.fullName"
-    [title]="zarexalvindaria.jobTitle"
-    [github]="zarexalvindaria.githubURL"
-    [linkedin]="zarexalvindaria.linkedinURL"
+    [name]="zarexalvindaria[0].fullName"
+    [title]="zarexalvindaria[0].jobTitle"
+    [github]="zarexalvindaria[0].githubURL"
+    [linkedin]="zarexalvindaria[0].linkedinURL"
   ></app-header>
 
   <!-- ************ PROJECTS / PORTFOLIO  ************** -->
@@ -13,12 +13,15 @@
 
   <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
   <app-education
-    [schoolName]="zarexalvindaria.school.name"
-    [schoolAddress]="zarexalvindaria.school.address"
-    [course]="zarexalvindaria.school.course"
-    [major]="zarexalvindaria.school.major"
-    [graduation]="zarexalvindaria.school.expectedGraduation"
+    [schoolName]="zarexalvindaria[0].school.name"
+    [schoolAddress]="zarexalvindaria[0].school.address"
+    [course]="zarexalvindaria[0].school.course"
+    [major]="zarexalvindaria[0].school.major"
+    [graduation]="zarexalvindaria[0].school.expectedGraduation"
+    [courseworks]="zarexalvindaria[0].relatedCoursework"
+    [certs]="zarexalvindaria[0].certificate"
   ></app-education>
+
   <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
   <app-footer></app-footer>
 </main>

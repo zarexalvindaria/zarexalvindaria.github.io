@@ -10,7 +10,7 @@
     </section>
     <div class="coursework">
       <button
-        *ngFor="let coursework of relatedCoursework"
+        *ngFor="let coursework of courseworks"
         type="button"
         class="btn btn-dark"
         data-toggle="tooltip"
@@ -21,7 +21,7 @@
       </button>
     </div>
 
-    <section *ngFor="let cert of certificates">
+    <section *ngFor="let cert of certs">
       <p>
         <strong>{{ cert.certificateName }}</strong>
       </p>
