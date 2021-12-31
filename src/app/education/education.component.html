@@ -8,7 +8,7 @@
         >, {{ major }}, {{ graduation }}
       </p>
     </section>
-    <div class="keywords">
+    <div class="coursework">
       <button
         *ngFor="let coursework of relatedCoursework"
         type="button"
@@ -21,31 +21,14 @@
       </button>
     </div>
 
-    <section>
-      <p><strong>Cloud Native Application Architect Nanodegree</strong></p>
-      <p>Udacity, 11.2021</p>
+    <section *ngFor="let cert of certificates">
       <p>
-        <a
-          href="https://graduation.udacity.com/confirm/HZJUTKXR"
-          target="_blank"
-          >Credential ID HZJUTKXR</a
-        >
+        <strong>{{ cert.certificateName }}</strong>
       </p>
-    </section>
-
-    <section>
-      <p><strong>Associate Reactive Developer (OutSystems 11)</strong></p>
-      <p>OutSystems, 04.2021</p>
-    </section>
-
-    <section>
-      <p><strong>AWS Certified Cloud Practitioner (CLF)</strong></p>
-      <p>Amazon Web Services, 03.2021</p>
+      <p>{{ cert.provider }}, {{ cert.dateAcquired }}</p>
       <p>
-        <a
-          href="https://www.youracclaim.com/badges/da75d76f-315c-4365-bfff-f5889234ccf4"
-          target="_blank"
-          >Credential ID 4S4E4TKBK2V4Q19X</a
+        <a href="{{ cert.verificationURL }}" target="_blank">
+          {{ cert.credentialID }}</a
         >
       </p>
     </section>
