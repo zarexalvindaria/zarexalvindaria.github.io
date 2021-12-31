@@ -11,16 +11,15 @@ export class ProjectComponent implements OnInit {
   projects = [
     {
       name: 'TechTrends',
+      id: 'techtrends',
       image: [
         {
-          imageGroup: 'techtrends',
           imageURL: 'github-actions',
           captionHead: 'GitHub Actions',
           caption:
             'Used Continuous Integration (CI) via GitHub Actions to build, tag, and push the TechTrends Docker image to DockerHub.',
         },
         {
-          imageGroup: 'techtrends',
           imageURL: 'cicd',
           captionHead: 'Continuous Delivery with ArgoCD',
           caption:
@@ -74,9 +73,9 @@ export class ProjectComponent implements OnInit {
     },
     {
       name: 'Udaconnect (Message Passing & Refactoring)',
+      id: 'udaconnect',
       image: [
         {
-          imageGroup: 'udaconnect',
           imageURL: 'app-preview',
           captionHead: '',
           caption: '',
@@ -125,9 +124,9 @@ export class ProjectComponent implements OnInit {
     },
     {
       name: 'Observability & Metrics Dashboard',
+      id: 'observability',
       image: [
         {
-          imageGroup: 'observability',
           imageURL: 'dashboard',
           captionHead: '',
           caption: '',
@@ -170,9 +169,9 @@ export class ProjectComponent implements OnInit {
     },
     {
       name: 'Hardened Microservice',
+      id: 'msecurity',
       image: [
         {
-          imageGroup: 'msecurity',
           imageURL: 'monitoring',
           captionHead: '',
           caption: '',

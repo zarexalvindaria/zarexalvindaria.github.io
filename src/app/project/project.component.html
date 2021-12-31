@@ -2,7 +2,7 @@
   <div class="content-wrap divider">
     <h2 class="projects">Featured Projects</h2>
 
-    <!-- Experiment ngFor for the project items -->
+    <!-- ngFor Directive for the project items -->
     <section
       class="project-item"
       *ngFor="let project of projects; let i = index"
@@ -13,9 +13,7 @@
         <ng-template ngbSlide *ngFor="let image of projects[i].image">
           <div class="carousel-img-wrapper">
             <img
-              src="assets/images/{{ image.imageGroup }}/{{
-                image.imageURL
-              }}.png"
+              src="assets/images/{{ project.id }}/{{ image.imageURL }}.png"
               alt="GitHub Actions"
             />
           </div>
@@ -43,6 +41,6 @@
       <p><span [innerHTML]="project.description"></span></p>
     </section>
 
-    <!-- End Experiment ngFor -->
+    <!-- End ngFor Directive-->
   </div>
 </section>
