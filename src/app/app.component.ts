@@ -7,15 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'zarexalvindaria';
   zarexalvindaria = {
     'fullName': 'Zarex Alvin Daria',
     'jobTitle': 'Cloud Native Application Architect & Developer',
     'githubURL': 'https://github.com/zarexalvindaria',
-    'linkedinURL': 'https://linkedin.com/in/zarexalvindaria'
-}
-  
-  constructor() { }
+    'linkedinURL': 'https://linkedin.com/in/zarexalvindaria',
+    'school': {'name': 'Asia Pacific College', 
+              'address': 'Makati City, Philippines',
+              'course': 'BS Information Technology',
+              'major': 'Major in Mobile and Internet Technologies',
+              'expectedGraduation': '2022'}
+
+};
+
+
+  constructor() { 
+   
+  }
  
   
 }

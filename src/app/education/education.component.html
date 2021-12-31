@@ -2,18 +2,24 @@
   <div class="content-wrap item-details">
     <h2 class="education">Education & Certifications</h2>
     <section>
-      <p>Asia Pacific College, Makati City, Philippines</p>
+      <p>{{ schoolName }}, {{ schoolAddress }}</p>
       <p>
-        <strong>BS Information Technology</strong>, Major in Mobile and Internet
-        Technologies, 2022
-      </p>
-      <p>
-        Database Management • Mobile Applications • Mobile Programming • Data
-        Structures • UI/UX Design • Web Programming • Information Security •
-        Software Development • Systems & Management • Programming Embedded
-        Systems • Systems and Design • IT Analytics
+        <strong>{{ course }}</strong
+        >, {{ major }}, {{ graduation }}
       </p>
     </section>
+    <div class="keywords">
+      <button
+        *ngFor="let coursework of relatedCoursework"
+        type="button"
+        class="btn btn-dark"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="{{ coursework }}"
+      >
+        {{ coursework }}
+      </button>
+    </div>
 
     <section>
       <p><strong>Cloud Native Application Architect Nanodegree</strong></p>

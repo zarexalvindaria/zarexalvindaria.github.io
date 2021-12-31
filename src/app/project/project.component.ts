@@ -13,26 +13,24 @@ export class ProjectComponent implements OnInit {
   observabilityImages = ['dashboard'].map((n) => `assets/images/observability/${n}.png`);
   msecurityImages = ['monitoring'].map((n) => `assets/images/msecurity/${n}.png`);
 
-  techtrendsTags = [
-    'kubernetes', 'docker', 'argocd', 'python'
-  ]
+  projectKeywords: ProjectKeywords =  {
+    "techtrends": ["python", "docker", "kubernetes", "flask", "helm", "cloud-native", "dockerhub", "cicd", "argocd", "github-actions", "k3s", "vagrant"],
+    "observability": ["grafana", "suse prometheus", "slo", "cloud-native", "observability", "jaeger", "jaeger-tracing", "kubernetes", "vagrant"],
+    "udaconnect": ["python", "docker", "kubernetes", "flask", "kafka", "microservice", "rest-api", "postgresql", "grpc", "cloud-native", "refactoring", "message-passing", "monolith-architecture"],
+    "msecurity": ["docker", "kubernetes", "flask", "security", "microservice", "grafana", "cloud-native", "hardening", "falco", "stride", "rke", "trivy", "grype"]
+  }
 
-  udaconnectTags = [
-
-  ]
-
-  observabilityTags = [
-
-  ]
-
-  msecurityTags = [
-    
-  ]
-
-  constructor() {  
+  constructor(){  
   }
 
   ngOnInit(): void {
   }
 
+}
+
+export interface ProjectKeywords {
+  techtrends: string[],
+  observability: string[],
+  udaconnect: string[],
+  msecurity: string[],
 }

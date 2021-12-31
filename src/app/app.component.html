@@ -9,10 +9,16 @@
 
   <!-- ************ PROJECTS / PORTFOLIO  ************** -->
   <app-project></app-project>
+  <!-- [techtrendsTags.techtrends]="projectKeywords.techtrends"-->
 
   <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
-  <app-education></app-education>
-
+  <app-education
+    [schoolName]="zarexalvindaria.school.name"
+    [schoolAddress]="zarexalvindaria.school.address"
+    [course]="zarexalvindaria.school.course"
+    [major]="zarexalvindaria.school.major"
+    [graduation]="zarexalvindaria.school.expectedGraduation"
+  ></app-education>
   <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
   <app-footer></app-footer>
 </main>

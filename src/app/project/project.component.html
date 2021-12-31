@@ -35,17 +35,18 @@
       <!-- End Carousel -->
 
       <h3>TechTrends</h3>
-      <button
-        type="button"
-        class="btn btn-dark"
-        data-toggle="tooltip"
-        data-placement="top"
-        title="Kubernetes"
-        *ngFor="let tag of techtrendsTags"
-      >
-        {{ tag }}
-      </button>
-
+      <div class="tags">
+        <button
+          *ngFor="let tag of projectKeywords.techtrends"
+          type="button"
+          class="btn btn-dark"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="{{ tag }}"
+        >
+          {{ tag }}
+        </button>
+      </div>
       <p>
         TechTrends is an online news-sharing platform that enables access to the
         latest news within the cloud-native ecosystem. It is written using the
@@ -83,6 +84,18 @@
     <section class="project-item">
       <img [src]="udaconnectImages[0]" alt="Udaconnect" />
       <h3>Udaconnect (Message Passing & Refactoring)</h3>
+      <div class="tags">
+        <button
+          *ngFor="let tag of projectKeywords.udaconnect"
+          type="button"
+          class="btn btn-dark"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="{{ tag }}"
+        >
+          {{ tag }}
+        </button>
+      </div>
       <p>
         Udaconnect is an application running in Flask that uses location data
         from mobile devices to help conference attendees connect by being
@@ -112,6 +125,18 @@
     <section class="project-item">
       <img [src]="observabilityImages[0]" alt="Observability" />
       <h3>Observability & Metrics Dashboard</h3>
+      <div class="tags">
+        <button
+          *ngFor="let tag of projectKeywords.observability"
+          type="button"
+          class="btn btn-dark"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="{{ tag }}"
+        >
+          {{ tag }}
+        </button>
+      </div>
       <p>
         In this project, I created dashboards that use multiple graphs to
         monitor a sample application deployed on a Kubernetes cluster. I used
@@ -139,6 +164,18 @@
     <section class="project-item">
       <img [src]="msecurityImages[0]" alt="Hardened Microservice" />
       <h3>Hardened Microservice</h3>
+      <div class="tags">
+        <button
+          *ngFor="let tag of projectKeywords.msecurity"
+          type="button"
+          class="btn btn-dark"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="{{ tag }}"
+        >
+          {{ tag }}
+        </button>
+      </div>
       <p>
         In this project, I have applied what I learned about STRIDE to threat
         model a microservices environment. Then, I defined its security
