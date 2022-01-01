@@ -220,10 +220,11 @@ export class AppComponent {
     },
     relatedCoursework: [
       'Database Management',
-      'Mobile & Mobile Programming',
+      'Mobile Application',
+      'Mobile Programming',
+      'Android Programming',
       'Data Structures',
       'UI/UX Design',
-      'Web Programming',
       'Information Security',
       'Software Development',
       'Systems & Management',
