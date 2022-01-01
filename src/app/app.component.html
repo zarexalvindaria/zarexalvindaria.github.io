@@ -1,25 +1,24 @@
 <main>
   <!-- ***************  ABOUT / PROFILE  **************** -->
   <app-header
-    [name]="zarexalvindaria[0].fullName"
-    [title]="zarexalvindaria[0].jobTitle"
-    [github]="zarexalvindaria[0].githubURL"
-    [linkedin]="zarexalvindaria[0].linkedinURL"
+    [name]="zarexalvindaria.fullName"
+    [title]="zarexalvindaria.jobTitle"
+    [github]="zarexalvindaria.githubURL"
+    [linkedin]="zarexalvindaria.linkedinURL"
   ></app-header>
 
   <!-- ************ PROJECTS / PORTFOLIO  ************** -->
   <app-project></app-project>
-  <!-- [techtrendsTags.techtrends]="projectKeywords.techtrends"-->
 
   <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
   <app-education
-    [schoolName]="zarexalvindaria[0].school.name"
-    [schoolAddress]="zarexalvindaria[0].school.address"
-    [course]="zarexalvindaria[0].school.course"
-    [major]="zarexalvindaria[0].school.major"
-    [graduation]="zarexalvindaria[0].school.expectedGraduation"
-    [courseworks]="zarexalvindaria[0].relatedCoursework"
-    [certs]="zarexalvindaria[0].certificate"
+    [schoolName]="zarexalvindaria.school.name"
+    [schoolAddress]="zarexalvindaria.school.address"
+    [course]="zarexalvindaria.school.course"
+    [major]="zarexalvindaria.school.major"
+    [graduation]="zarexalvindaria.school.expectedGraduation"
+    [courseworks]="zarexalvindaria.relatedCoursework"
+    [certs]="zarexalvindaria.certificate"
   ></app-education>
 
   <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->

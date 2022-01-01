@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -8,10 +8,23 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./project.component.scss'],
 })
 export class ProjectComponent implements OnInit {
-  projects = [
+  // /* Test for Input from Main Component
+  // -------------------------------
+  // @Input() projectItems = [
+  //   {
+  //     projectName: '',
+  //     projectId: '',
+  //     image: [{ imageName: '', captionHead: '' }],
+  //     tags: [''],
+  //     description: '',
+  //   },
+  // ];
+  // -------------------------------*/
+
+  projectsInChild = [
     {
-      name: 'TechTrends',
-      id: 'techtrends',
+      projectName: 'TechTrends',
+      projectId: 'techtrends',
       image: [
         {
           imageName: 'github-actions',
@@ -72,8 +85,8 @@ export class ProjectComponent implements OnInit {
                 `,
     },
     {
-      name: 'Udaconnect (Message Passing & Refactoring)',
-      id: 'udaconnect',
+      projectName: 'Udaconnect (Message Passing & Refactoring)',
+      projectId: 'udaconnect',
       image: [
         {
           imageName: 'app-preview',
@@ -123,8 +136,8 @@ export class ProjectComponent implements OnInit {
               `,
     },
     {
-      name: 'Observability & Metrics Dashboard',
-      id: 'observability',
+      projectName: 'Observability & Metrics Dashboard',
+      projectId: 'observability',
       image: [
         {
           imageName: 'dashboard',
@@ -168,8 +181,8 @@ export class ProjectComponent implements OnInit {
               </p>`,
     },
     {
-      name: 'Hardened Microservice',
-      id: 'msecurity',
+      projectName: 'Hardened Microservice',
+      projectId: 'msecurity',
       image: [
         {
           imageName: 'monitoring',
@@ -192,26 +205,26 @@ export class ProjectComponent implements OnInit {
         'trivy',
         'grype',
       ],
-      description: `<p> In this project, I have applied what I learned about STRIDE to threat 
-        model a microservices environment. Then, I defined its security architecture 
+      description: `<p> In this project, I have applied what I learned about STRIDE to threat
+        model a microservices environment. Then, I defined its security architecture
         and its attack surfaces.
-        
-        </p> <p>Next, I hardened the application's Docker 
-        environment using Docker-bench. I also created an RKE cluster and walked 
+
+        </p> <p>Next, I hardened the application's Docker
+        environment using Docker-bench. I also created an RKE cluster and walked
         through a testing methodology to harden a Kubernetes cluster.</p>
-        
-        <p>I then 
-        hardened and deployed a Flask application after identifying and remediating 
+
+        <p>I then
+        hardened and deployed a Flask application after identifying and remediating
         its vulnerable libraries and code using Grype and Trivy.</p>
-        
-        <p>Afterward, 
-        I implemented runtime monitoring using Grafana to visualize runtime security 
+
+        <p>Afterward,
+        I implemented runtime monitoring using Grafana to visualize runtime security
         alerts via Sysdig Falco.</p>
-        
-        <p>I ran an unknown payload containing malicious 
-        commands into the Kubernetes cluster to simulate a security incident. Then, I 
-        remediated the incident, documented, and prepared an incident response report 
-        to be submitted to a Chief Technology Officer—describing the incident, its 
+
+        <p>I ran an unknown payload containing malicious
+        commands into the Kubernetes cluster to simulate a security incident. Then, I
+        remediated the incident, documented, and prepared an incident response report
+        to be submitted to a Chief Technology Officer—describing the incident, its
         impact, and the remediation steps taken.</p>`,
     },
   ];

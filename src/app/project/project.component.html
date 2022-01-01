@@ -5,15 +5,17 @@
     <!-- ngFor Directive for the project items -->
     <section
       class="project-item"
-      *ngFor="let project of projects; let i = index"
+      *ngFor="let projectItem of projectsInChild; index as i"
     >
-      <h3>{{ project.name }}</h3>
+      <h3>{{ projectItem.projectName }}</h3>
       <!-- Start Carousel of Images -->
       <ngb-carousel>
-        <ng-template ngbSlide *ngFor="let image of projects[i].image">
+        <ng-template ngbSlide *ngFor="let image of projectsInChild[i].image">
           <div class="carousel-img-wrapper">
             <img
-              src="assets/images/{{ project.id }}/{{ image.imageName }}.png"
+              src="assets/images/{{ projectItem.projectId }}/{{
+                image.imageName
+              }}.png"
               alt="GitHub Actions"
             />
           </div>
@@ -23,9 +25,11 @@
         </ng-template>
       </ngb-carousel>
       <!-- End Carousel -->
+
+      <!-- Start Tags -->
       <div class="tags">
         <button
-          *ngFor="let tag of project.tags"
+          *ngFor="let tag of projectItem.tags"
           type="button"
           class="btn btn-dark"
           data-toggle="tooltip"
@@ -35,7 +39,9 @@
           {{ tag }}
         </button>
       </div>
-      <p><span [innerHTML]="project.description"></span></p>
+      <!-- End tags -->
+
+      <p><span [innerHTML]="projectItem.description"></span></p>
     </section>
 
     <!-- End ngFor Directive-->
