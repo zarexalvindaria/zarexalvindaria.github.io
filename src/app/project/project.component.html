@@ -5,12 +5,12 @@
     <!-- ngFor Directive for the project items -->
     <section
       class="project-item"
-      *ngFor="let projectItem of projectsInChild; index as i"
+      *ngFor="let projectItem of projectItems; index as i"
     >
       <h3>{{ projectItem.projectName }}</h3>
       <!-- Start Carousel of Images -->
       <ngb-carousel>
-        <ng-template ngbSlide *ngFor="let image of projectsInChild[i].image">
+        <ng-template ngbSlide *ngFor="let image of projectItems[i].image">
           <div class="carousel-img-wrapper">
             <img
               src="assets/images/{{ projectItem.projectId }}/{{

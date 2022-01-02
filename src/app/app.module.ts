@@ -8,17 +8,16 @@ import { FooterComponent } from './footer/footer.component';
 import { ProjectComponent } from './project/project.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     EducationComponent,
     FooterComponent,
-    ProjectComponent
+    ProjectComponent,
   ],
   imports: [BrowserModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent, ProjectComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
