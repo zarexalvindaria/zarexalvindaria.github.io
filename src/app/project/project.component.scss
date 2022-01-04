@@ -1,3 +1,12 @@
+.carousel-caption h3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 15px;
+  margin: 0;
+  border-radius: 15px;
+  width: fit-content;
+  display: inline-flex;
+}
+
 h2.projects {
   font-family: "Caudex", serif;
   text-transform: uppercase;
@@ -63,13 +72,6 @@ div .tags {
   margin-bottom: 15px;
 }
 
-.carousel-caption h3 {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px 5px;
-  margin: 0;
-  border-radius: 15px;
-}
-
 /* Responsive Layout
 --------------------------------*/
 
@@ -78,8 +80,7 @@ div .tags {
     display: none;
   }
   .carousel-caption h3 {
-    font-size: 16px;
-    padding: 0;
+    font-size: 20px;
     margin: 0;
   }
 }
