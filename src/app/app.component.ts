@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  title = 'Zarex Alvin Daria • Portfolio';
   zarexalvindaria = {
     fullName: 'Zarex Alvin Daria',
-    jobTitle: 'Cloud Native Application Architect & Developer',
+    jobTitle:
+      'Junior Software Developer & Cloud Native Application Architect    ',
     githubURL: 'https://github.com/zarexalvindaria',
     linkedinURL: 'https://linkedin.com/in/zarexalvindaria',
     school: {
@@ -258,5 +261,7 @@ export class AppComponent {
     ],
   };
 
-  constructor() {}
+  constructor(private titleService: Title) {
+    this.titleService.setTitle(this.title);
+  }
 }
