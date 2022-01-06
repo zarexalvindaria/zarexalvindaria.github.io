@@ -10,8 +10,7 @@ export class AppComponent {
   title = 'Zarex Alvin Daria • Portfolio';
   zarexalvindaria = {
     fullName: 'Zarex Alvin Daria',
-    jobTitle:
-      'Junior Software Developer & Cloud Native Application Architect    ',
+    jobTitle: `Junior Software&nbsp;Developer &<br/>Cloud&nbsp;Native Application&nbsp;Architect`,
     githubURL: 'https://github.com/zarexalvindaria',
     linkedinURL: 'https://linkedin.com/in/zarexalvindaria',
     school: {

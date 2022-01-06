@@ -1,7 +1,7 @@
 <header>
   <div class="content-wrap">
     <h1 class="full-name">{{ name }}</h1>
-    <h3 class="job-title">{{ title }}</h3>
+    <h3 [innerHTML]="title" class="job-title"></h3>
     <div class="social-media">
       <div class="center">
         <a href="{{ github }}" target="_blank">

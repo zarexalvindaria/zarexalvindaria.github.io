@@ -3,28 +3,45 @@
     <h2 class="projects">Featured Projects</h2>
 
     <!-- ngFor Directive for the project items -->
+
     <section
       class="project-item"
       *ngFor="let projectItem of projectItems; index as i"
     >
       <h3>{{ projectItem.projectName }}</h3>
-      <!-- Start Carousel of Images -->
-      <ngb-carousel>
-        <ng-template ngbSlide *ngFor="let image of projectItems[i].image">
-          <div class="carousel-img-wrapper">
-            <img
-              src="assets/images/{{ projectItem.projectId }}/{{
-                image.imageName
-              }}.png"
-              alt="GitHub Actions"
-            />
-          </div>
-          <div class="carousel-caption">
-            <h3>{{ image.captionHead }}</h3>
-          </div>
-        </ng-template>
-      </ngb-carousel>
-      <!-- End Carousel -->
+
+      <!-- Show slideshow if there are more than one image for the project-->
+      <div *ngIf="projectItems[i].image.length > 1">
+        <ngb-carousel>
+          <ng-template ngbSlide *ngFor="let image of projectItems[i].image">
+            <div class="carousel-img-wrapper">
+              <img
+                src="assets/images/{{ projectItem.projectId }}/{{
+                  image.imageName
+                }}.png"
+                alt="GitHub Actions"
+              />
+            </div>
+            <div class="carousel-caption">
+              <h3>{{ image.captionHead }}</h3>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+      </div>
+      <!--End slideshow -->
+
+      <!-- ngIf there's only 1 image, disable slideshow -->
+      <div *ngIf="projectItems[i].image.length == 1">
+        <div *ngFor="let image of projectItems[i].image">
+          <img
+            src="assets/images/{{ projectItem.projectId }}/{{
+              image.imageName
+            }}.png"
+            alt="GitHub Actions"
+          />
+        </div>
+      </div>
+      <!-- End ngIf -->>
 
       <!-- Start Tags -->
       <div class="tags">
@@ -43,7 +60,6 @@
 
       <p><span [innerHTML]="projectItem.description"></span></p>
     </section>
-
     <!-- End ngFor Directive-->
   </div>
 </section>
