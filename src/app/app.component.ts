@@ -60,6 +60,37 @@ export class AppComponent {
     ],
     projectItems: [
       {
+        projectName: 'Imports',
+        projectId: 'analytics',
+        image: [
+          {
+            imageName: '01_top_commodity_imports',
+            captionHead: 'Top Commodity Imports 2020',
+          },
+          {
+            imageName: '02_top_2020_imports_source',
+            captionHead: 'Source Country of 2020 Imports',
+          },
+        ],
+        tags: [
+          'tableau',
+          'data-science',
+          'analytics',
+          'openstat',
+          'philippine-imports',
+          'business-intelligence',
+        ],
+        description: `
+                <p>
+                  This project is part of my IT Analytics 3 track where I used Tableau to 
+                  combine a million-record of datasets by using Tableau's UNION and JOIN 
+                  function to generate insights about the Philippines' top  commodity imports 
+                  for the year 2020 - 2021. The datasets are manually downloaded from PSA's 
+                  OpenSTAT database.
+                </p>
+                `,
+      },
+      {
         projectName: 'TechTrends',
         projectId: 'techtrends',
         image: [
