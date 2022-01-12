@@ -82,11 +82,24 @@ export class AppComponent {
         ],
         description: `
                 <p>
-                  This project is part of my IT Analytics 3 track where I used Tableau to 
-                  combine a million-record of datasets by using Tableau's UNION and JOIN 
-                  function to generate insights about the Philippines' top  commodity imports 
-                  for the year 2020 - 2021. The datasets are manually downloaded from PSA's 
-                  OpenSTAT database.
+                This project is part of my IT Analytics 3 track where I used Tableau 
+                and Microsoft Excel to combine a million-record of datasets by using 
+                Tableau's UNION and JOIN function. In this project, I generated insights 
+                about the Philippines' Top Commodity Imports for the year 2020 – 2021
+                 by processing a million records of datasets that I manually downloaded 
+                 from PSA's OpenSTAT database. Some insights I generated from the datasets 
+                 are the following:<br/><br/>
+                
+                 <ol>
+                  <li>The Philippines relies on Indonesia's coal resources to power its economy's 
+                  energy requirement for the years 2020 to 2021.</li>
+                  <li>The Philippines needs to shift into renewable energy to prevent relying on 
+                  Indonesia for its energy needs.</li>
+                  <li>The longer the quarantine is extended, the more the Philippines will need to 
+                  import coal if it does not find ways to shift into renewable energy.</li>
+                  <li>Indonesia, China, and Vietnam are the top three exporters to the Philippines 
+                  in the year 2020.</li>
+                 </pl>
                 </p>
                 `,
       },
