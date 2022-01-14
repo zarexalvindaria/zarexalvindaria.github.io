@@ -60,15 +60,23 @@ export class AppComponent {
     ],
     projectItems: [
       {
-        projectName: 'Imports',
+        projectName: "Philippine Imports '20-'21",
         projectId: 'analytics',
         image: [
           {
-            imageName: '01_top_commodity_imports',
+            imageName: '01_top_2021_commodity_imports',
+            captionHead: 'Top Commodity Imports 2021',
+          },
+          {
+            imageName: '02_top_2021_imports_source',
+            captionHead: 'Source Country of 2021 Imports',
+          },
+          {
+            imageName: '03_top_2020_commodity_imports',
             captionHead: 'Top Commodity Imports 2020',
           },
           {
-            imageName: '02_top_2020_imports_source',
+            imageName: '04_top_2020_imports_source',
             captionHead: 'Source Country of 2020 Imports',
           },
         ],
@@ -93,12 +101,12 @@ export class AppComponent {
                  <ol>
                   <li>The Philippines relied on Indonesia's coal resources to power its economy's 
                   energy requirement for the years 2020 to 2021.</li>
-                  <li>The Philippines needs to shift into a more sustainable energy resource like 
-                  renewable energy to prevent relying on Indonesia for its energy needs.</li>
+                  <li>The Philippines needs to shift into renewable energy to prevent relying on 
+                  Indonesia for its energy needs.</li>
                   <li>The longer the quarantine is extended, the more the Philippines will need to 
                   import coal if it does not find ways to shift into renewable energy.</li>
-                  <li>Indonesia, China, and Vietnam are the top three exporters to the Philippines 
-                  in the year 2020.</li>
+                  <li>Indonesia, China, Vietnam, and the US are the top four exporters to the Philippines 
+                  in the year 2020 to 2021.</li>
                  </pl>
                 </p>
                 `,
