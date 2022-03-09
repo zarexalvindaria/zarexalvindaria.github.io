@@ -64,29 +64,18 @@ export class AppComponent {
         projectId: 'nikriks',
         image: [
           {
-            imageName: '01_top_2021_commodity_imports',
-            captionHead: 'Top Commodity Imports 2021',
-          },
-          {
-            imageName: '02_top_2021_imports_source',
-            captionHead: 'Source Country of 2021 Imports',
-          },
-          {
-            imageName: '03_top_2020_commodity_imports',
-            captionHead: 'Top Commodity Imports 2020',
-          },
-          {
-            imageName: '04_top_2020_imports_source',
-            captionHead: 'Source Country of 2020 Imports',
+            imageName: '01_nikriks_alacarte_category',
+            captionHead: "NikRik's Ala Carte Product Category",
           },
         ],
         tags: [
-          'tableau',
-          'data-science',
-          'analytics',
-          'openstat',
-          'philippine-imports',
-          'business-intelligence',
+          'angular',
+          'spring-boot',
+          'mysql',
+          'cloud-run',
+          'docker',
+          'container-registry',
+          'full-stack-ecommerce',
         ],
         description: `
                 <p>
