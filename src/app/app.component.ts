@@ -73,11 +73,12 @@ export class AppComponent {
           'spring-boot',
           'mysql',
           'cloud-run',
+          'cloud-sql',
           'docker',
           'container-registry',
+          'github-pages',
           'full-stack-ecommerce',
           'google-cloud-platform',
-          'github-pages',
         ],
         description: `
                 <p><a href="https://nikriks.github.io" target="_blank">NikRik's Batangas Lomi Web Application</a> 
@@ -92,7 +93,9 @@ export class AppComponent {
                 Every 2 weeks time, we met with NikRik's owners to present the progress in the development of the 
                 application and gathered their feedback.<br/><br/>
 
-                Our team have also used Google Cloud Platform and GitHub Pages to deploy the application.
+                Our team have also used Docker to containerized the backend of the application, Google Cloud Platform 
+                (Cloud Run for the backend and Cloud SQL for the database), 
+                and GitHub Pages (frontend) to deploy the application.
                 </p>
                 `,
       },
