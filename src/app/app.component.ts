@@ -60,7 +60,7 @@ export class AppComponent {
     ],
     projectItems: [
       {
-        projectName: "NikRik's Batangas Lomi Web Application",
+        projectName: `NikRik's Batangas Lomi Web Application`,
         projectId: 'nikriks',
         image: [
           {
@@ -76,27 +76,23 @@ export class AppComponent {
           'docker',
           'container-registry',
           'full-stack-ecommerce',
+          'google-cloud-platform',
+          'github-pages',
         ],
         description: `
-                <p>
-                This project is part of my IT Analytics 3 track where I used Tableau 
-                and Microsoft Excel to combine datasets by using Tableau's UNION and 
-                JOIN function. In this project, I generated insights about the Philippines' 
-                Top Commodity Imports for the year 2020 – 2021
-                 by processing more than a million records of datasets that I manually downloaded 
-                 from PSA's OpenSTAT database. Some insights I generated from the datasets 
-                 are the following:<br/><br/>
-                
-                 <ol>
-                  <li>The Philippines relied on Indonesia's coal resources to power its economy's 
-                  energy requirement for the years 2020 to 2021.</li>
-                  <li>The Philippines needs to shift into renewable energy to prevent relying on 
-                  Indonesia for its energy needs.</li>
-                  <li>The longer the quarantine is extended, the more the Philippines will need to 
-                  import coal if it does not find ways to shift into renewable energy.</li>
-                  <li>Indonesia, China, Vietnam, and the US are the top four exporters to the Philippines 
-                  in the year 2020 to 2021.</li>
-                 </pl>
+                <p><a href="https://nikriks.github.io" target="_blank">NikRik's Batangas Lomi Web Application</a> 
+                is a project requirement in my Software Development subject at Asia Pacific College. In this project, our 
+                Software Development team (RAMStack) partnered with a startup food business named, NikRik's Batangas Lomi 
+                to build a software from their specified requirements.<br/><br/>
+
+                As a solution to their business pain points, we built an Order Management System/Full Stack E-commerce 
+                Web Application using Angular as the front end, Spring Boot as the backend, and MySQL as the 
+                database.<br/><br/>
+
+                Every 2 weeks time, we met with NikRik's owners to present the progress in the development of the 
+                application and gathered their feedback.<br/><br/>
+
+                Our team have also used Google Cloud Platform and GitHub Pages to deploy the application.
                 </p>
                 `,
       },
@@ -134,7 +130,7 @@ export class AppComponent {
                 This project is part of my IT Analytics 3 track where I used Tableau 
                 and Microsoft Excel to combine datasets by using Tableau's UNION and 
                 JOIN function. In this project, I generated insights about the Philippines' 
-                Top Commodity Imports for the year 2020 – 2021
+                Top Commodity Imports for the year 2020 &#45; 2021
                  by processing more than a million records of datasets that I manually downloaded 
                  from PSA's OpenSTAT database. Some insights I generated from the datasets 
                  are the following:<br/><br/>
@@ -148,7 +144,7 @@ export class AppComponent {
                   import coal if it does not find ways to shift into renewable energy.</li>
                   <li>Indonesia, China, Vietnam, and the US are the top four exporters to the Philippines 
                   in the year 2020 to 2021.</li>
-                 </pl>
+                 </ol>
                 </p>
                 `,
       },
