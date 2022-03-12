@@ -82,20 +82,21 @@ export class AppComponent {
         ],
         description: `
                 <p><a href="https://nikriks.github.io" target="_blank">NikRik's Batangas Lomi Web Application</a> 
-                is a project requirement in my Software Development subject at Asia Pacific College. In this project, our 
-                Software Development team (RAMStack) partnered with a startup food business named, NikRik's Batangas Lomi 
-                to build a software from their specified requirements.<br/><br/>
+                is a project in our Software Development subject at Asia Pacific College. In this project, 
+                I served as the Lead Developer of our Software Development team (RAMStack) in which we partnered 
+                with a startup food business named NikRik's Batangas Lomi to build software from their specified 
+                requirements.<br/><br/>
 
-                As a solution to their business pain points, we built an Order Management System/Full Stack E-commerce 
-                Web Application using Angular as the front end, Spring Boot as the backend, and MySQL as the 
-                database.<br/><br/>
+                As a solution to their business pain points, we built an Order Management System/Full Stack 
+                E-commerce Web Application using Angular as the front end, Spring Boot as the backend, and 
+                MySQL as the database.<br/><br/>
 
-                Every 2 weeks time, we met with NikRik's owners to present the progress in the development of the 
-                application and gathered their feedback.<br/><br/>
+                Every 2 weeks time, we met with NikRik's owners to present the progress in the development 
+                of the application and gathered their feedback.<br/><br/>
 
-                Our team have also used Docker to containerized the backend of the application, Google Cloud Platform 
-                (Cloud Run for the backend and Cloud SQL for the database), 
-                and GitHub Pages (frontend) to deploy the application.
+                Our team also used Docker to containerize the backend of the application, Google Cloud Platform 
+                (Cloud Run for the backend and Cloud SQL for the database), and GitHub Pages (frontend) 
+                to deploy the application.
                 </p>
                 `,
       },
