@@ -36,6 +36,30 @@ export class AppComponent {
     ],
     certificate: [
       {
+        certificateName: 'Learning Hadoop',
+        provider: 'LinkedIn Learning',
+        dateAcquired: '02.2023',
+        credentialID: 'Credential ID f31f4cb6d...',
+        verificationURL:
+          'https://www.linkedin.com/learning/certificates/f31f4cb6d896232eaf2b226c075301ba80bac558f96119fe39dc334ee4933035?u=35279340',
+      },
+      {
+        certificateName: 'Google Project Management',
+        provider: 'Coursera',
+        dateAcquired: '11.2022',
+        credentialID: 'Credential ID WLBDH9GRXAC6',
+        verificationURL:
+          'https://coursera.org/verify/professional-cert/WLBDH9GRXAC6',
+      },
+      {
+        certificateName: 'Full Stack: Angular and Java Spring Boot E-Commerce Website',
+        provider: 'Udemy',
+        dateAcquired: '02.2022',
+        credentialID: 'Credential ID UC-d0590dc0-ca03-4391-a153-01e527780932',
+        verificationURL:
+          'https://www.udemy.com/certificate/UC-d0590dc0-ca03-4391-a153-01e527780932',
+      },
+      {
         certificateName: 'Cloud Native Application Architect Nanodegree',
         provider: 'Udacity',
         dateAcquired: '11.2021',
