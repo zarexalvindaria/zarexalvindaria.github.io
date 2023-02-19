@@ -36,6 +36,14 @@ export class AppComponent {
     ],
     certificate: [
       {
+        certificateName: 'Streamlined Data Ingestion with pandas',
+        provider: 'Datacamp',
+        dateAcquired: '02.2023',
+        credentialID: 'Credential ID fc4520137be210ac6150110171a76752bc4142f7',
+        verificationURL:
+          'https://www.datacamp.com/statement-of-accomplishment/course/fc4520137be210ac6150110171a76752bc4142f7',
+      },
+      {
         certificateName: 'Learning Hadoop',
         provider: 'LinkedIn Learning',
         dateAcquired: '02.2023',
