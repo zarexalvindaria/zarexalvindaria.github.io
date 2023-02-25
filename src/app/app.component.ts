@@ -99,6 +99,10 @@ export class AppComponent {
             imageName: '01_nikriks_alacarte_category',
             captionHead: "NikRik's Ala Carte Product Category",
           },
+          {
+            imageName: '02_nikriks_catalog_management',
+            captionHead: "NikRik's Catalog Management Preview",
+          },
         ],
         tags: [
           'angular',
