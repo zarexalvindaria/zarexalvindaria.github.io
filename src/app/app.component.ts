@@ -37,6 +37,38 @@ export class AppComponent {
     ],
     certificate: [
       {
+        certificateName: 'Azure Data Fundamentals (DP-900)',
+        provider: 'Microsoft',
+        dateAcquired: '06.2023',
+        credentialID: 'Credential ID 1794-2798',
+        verificationURL:
+          'https://www.credly.com/badges/a09b6197-0ac0-435c-8f15-6f94dc72d509',
+      },
+      {
+        certificateName: 'Intermediate Rest API',
+        provider: 'HackerRank',
+        dateAcquired: '06.2023',
+        credentialID: 'Credential ID 37780b427fac',
+        verificationURL:
+          'https://www.hackerrank.com/certificates/37780b427fac',
+      },
+      {
+        certificateName: 'dbt Fundamentals',
+        provider: 'dbt Labs',
+        dateAcquired: '06.2023',
+        credentialID: 'Credential ID 33787e97...',
+        verificationURL:
+          'https://credentials.getdbt.com/33787e97-7f4d-459c-b9f0-6055b0922f7c',
+      },
+      {
+        certificateName: 'Advanced SQL',
+        provider: 'HackerRank',
+        dateAcquired: '05.2023',
+        credentialID: 'Credential ID aef7fd5b6363',
+        verificationURL:
+          'https://www.hackerrank.com/certificates/aef7fd5b6363',
+      },
+      {
         certificateName: 'Building Data Engineering Pipelines in Python',
         provider: 'DataCamp',
         dateAcquired: '04.2023',
@@ -103,8 +135,8 @@ export class AppComponent {
         certificateName: 'Associate Reactive Developer (OutSystems 11)',
         provider: 'OutSystems',
         dateAcquired: '04.2021',
-        credentialID: '',
-        verificationURL: '',
+        credentialID: 'Credential ID 000',
+        verificationURL: 'https://drive.google.com/file/d/1_9VOKbIn47Nn1_9PGNBPS5houtHn-UzC/view',
       },
       {
         certificateName: 'AWS Certified Cloud Practitioner (CLF)',
@@ -112,7 +144,7 @@ export class AppComponent {
         dateAcquired: '03.2021',
         credentialID: 'Credential ID 4S4E4TKBK2V4Q19X',
         verificationURL:
-          'https://www.youracclaim.com/badges/da75d76f-315c-4365-bfff-f5889234ccf4',
+          'https://www.credly.com/badges/da75d76f-315c-4365-bfff-f5889234ccf4',
       },
     ],
     projectItems: [
