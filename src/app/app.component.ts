@@ -128,6 +128,18 @@ export class AppComponent {
             imageName: '02_nikriks_catalog_management',
             captionHead: "NikRik's Catalog Management Preview",
           },
+          {
+            imageName: '03_nikriks_order_management',
+            captionHead: "NikRik's Order Management Preview",
+          },
+          {
+            imageName: '04_nikriks_user_management',
+            captionHead: "NikRik's User Management Preview",
+          },
+          {
+            imageName: '05_nikriks_cart_preview',
+            captionHead: "NikRik's Cart Preview",
+          }
         ],
         tags: [
           'angular',
