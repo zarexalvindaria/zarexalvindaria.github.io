@@ -11,6 +11,7 @@ export class EducationComponent implements OnInit {
   @Input() course = '';
   @Input() major = '';
   @Input() graduation = '';
+  @Input() honor = '';
   @Input() courseworks = [''];
   @Input() certs = [
     {

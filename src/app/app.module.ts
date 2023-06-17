@@ -7,6 +7,7 @@ import { EducationComponent } from './education/education.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectComponent } from './project/project.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     EducationComponent,
     FooterComponent,
     ProjectComponent,
+    ScrollTopComponent,
   ],
   imports: [BrowserModule, NgbModule],
   providers: [],
