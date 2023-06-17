@@ -19,6 +19,7 @@ export class AppComponent {
       course: 'BS Information Technology',
       major: 'Major in Mobile and Internet Technologies',
       expectedGraduation: '2022',
+      honor: 'Magna Cum Laude'
     },
     relatedCoursework: [
       'Database Management',
@@ -36,10 +37,34 @@ export class AppComponent {
     ],
     certificate: [
       {
+        certificateName: 'Building Data Engineering Pipelines in Python',
+        provider: 'DataCamp',
+        dateAcquired: '04.2023',
+        credentialID: 'Credential ID 577fa1...',
+        verificationURL:
+          'https://www.datacamp.com/statement-of-accomplishment/course/577fa1bd707007fea87e7eb33e414ec3a68c4899',
+      },
+      {
+        certificateName: 'Data Engineering, Big Data, and Machine Learning on GCP',
+        provider: 'Coursera',
+        dateAcquired: '04.2023',
+        credentialID: 'Credential ID 8UTD7UZGQYRG',
+        verificationURL:
+          'https://www.coursera.org/account/accomplishments/specialization/certificate/8UTD7UZGQYRG',
+      },
+      {
+        certificateName: 'Apache Spark (TM) SQL for Data Analysts',
+        provider: 'Databricks',
+        dateAcquired: '03.2023',
+        credentialID: 'Credential ID NVG6P4BV8N5G',
+        verificationURL:
+          'https://www.coursera.org/account/accomplishments/certificate/NVG6P4BV8N5G',
+      },
+      {
         certificateName: 'Streamlined Data Ingestion with pandas',
         provider: 'Datacamp',
         dateAcquired: '02.2023',
-        credentialID: 'Credential ID fc4520137be210ac6150110171a76752bc4142f7',
+        credentialID: 'Credential ID fc4520...',
         verificationURL:
           'https://www.datacamp.com/statement-of-accomplishment/course/fc4520137be210ac6150110171a76752bc4142f7',
       },
@@ -57,7 +82,7 @@ export class AppComponent {
         dateAcquired: '11.2022',
         credentialID: 'Credential ID WLBDH9GRXAC6',
         verificationURL:
-          'https://coursera.org/verify/professional-cert/WLBDH9GRXAC6',
+          'https://www.coursera.org/account/accomplishments/specialization/certificate/WLBDH9GRXAC6',
       },
       {
         certificateName: 'Full Stack: Angular and Java Spring Boot E-Commerce Website',
@@ -98,6 +123,10 @@ export class AppComponent {
           {
             imageName: '01_nikriks_alacarte_category',
             captionHead: "NikRik's Ala Carte Product Category",
+          },
+          {
+            imageName: '02_nikriks_catalog_management',
+            captionHead: "NikRik's Catalog Management Preview",
           },
         ],
         tags: [
