@@ -37,6 +37,62 @@ export class AppComponent {
     ],
     certificate: [
       {
+        certificateName: 'Professional Data Engineer',
+        provider: 'Google Cloud',
+        dateAcquired: '02.2024',
+        credentialID: 'Credential ID 95968927',
+        verificationURL:
+          'https://google.accredible.com/94e0f31f-42cc-40f2-a4ac-bf200e92db5e',
+      },
+      {
+        certificateName: 'Professional Cloud Architect',
+        provider: 'Google Cloud',
+        dateAcquired: '06.2024',
+        credentialID: 'Credential ID 8854fc3f-b288-4a7d-85bf-120d92f31566',
+        verificationURL:
+          'https://www.credly.com/badges/8854fc3f-b288-4a7d-85bf-120d92f31566',
+      },
+      {
+        certificateName: 'Professional Cloud DevOps Engineer',
+        provider: 'Google Cloud',
+        dateAcquired: '01.2025',
+        credentialID: 'Credential ID 5c5116de-cea3-469f-afa5-153176261c10',
+        verificationURL:
+          'https://www.credly.com/badges/5c5116de-cea3-469f-afa5-153176261c10',
+      },
+      {
+        certificateName: 'Professional Cloud Database Engineer',
+        provider: 'Google Cloud',
+        dateAcquired: '06.2025',
+        credentialID: 'Credential ID 8484a8ea-d3b3-467e-b9c1-17cca0641452',
+        verificationURL:
+          'https://www.credly.com/badges/8484a8ea-d3b3-467e-b9c1-17cca0641452',
+      },
+      {
+        certificateName: 'Professional Machine Learning Engineer',
+        provider: 'Google Cloud',
+        dateAcquired: '08.2024',
+        credentialID: 'Credential ID e2c23fa9-b5f8-4209-bdb3-ef4da1d038aa',
+        verificationURL:
+          'https://www.credly.com/badges/e2c23fa9-b5f8-4209-bdb3-ef4da1d038aa',
+      },
+      {
+        certificateName: 'Professional Cloud Developer',
+        provider: 'Google Cloud',
+        dateAcquired: '08.2025',
+        credentialID: 'Credential ID 36a6964b-c455-407c-a17b-067b23c7516f',
+        verificationURL:
+          'https://www.credly.com/badges/36a6964b-c455-407c-a17b-067b23c7516f',
+      },
+      {
+        certificateName: 'Generative AI Leader',
+        provider: 'Google Cloud',
+        dateAcquired: '08.2025',
+        credentialID: 'Credential ID d24cd859-f695-4cf5-ab76-ce67e3ec26c4',
+        verificationURL:
+          'https://www.credly.com/badges/d24cd859-f695-4cf5-ab76-ce67e3ec26c4',
+      },
+      {
         certificateName: 'Azure Data Fundamentals (DP-900)',
         provider: 'Microsoft',
         dateAcquired: '06.2023',
