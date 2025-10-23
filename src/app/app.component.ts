@@ -40,9 +40,9 @@ export class AppComponent {
         certificateName: 'Professional Data Engineer',
         provider: 'Google Cloud',
         dateAcquired: '02.2024',
-        credentialID: 'Credential ID 95968927',
+        credentialID: 'Credential ID bfff6c5e-a2d4-44fb-be8c-e28486f43b10',
         verificationURL:
-          'https://google.accredible.com/94e0f31f-42cc-40f2-a4ac-bf200e92db5e',
+          'https://www.credly.com/badges/bfff6c5e-a2d4-44fb-be8c-e28486f43b10',
       },
       {
         certificateName: 'Professional Cloud Architect',
