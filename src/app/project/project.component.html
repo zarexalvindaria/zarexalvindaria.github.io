@@ -3,62 +3,68 @@
     <h2 class="projects">Featured Projects</h2>
 
     <!-- ngFor Directive for the project items -->
-    <section
-      class="project-item"
-      *ngFor="let projectItem of projectItems; index as i"
-    >
-      <h3>{{ projectItem.projectName }}</h3>
-
-      <!-- Show slideshow if there are more than one image for the project-->
-      <div *ngIf="projectItems[i].image.length > 1">
-        <ngb-carousel>
-          <ng-template ngbSlide *ngFor="let image of projectItems[i].image">
-            <div class="carousel-img-wrapper">
-              <img
+    @for (projectItem of projectItems; track projectItem; let i = $index) {
+      <section
+        class="project-item"
+        >
+        <h3>{{ projectItem.projectName }}</h3>
+        <!-- Show slideshow if there are more than one image for the project-->
+        @if (projectItems[i].image.length > 1) {
+          <div>
+            <ngb-carousel>
+              @for (image of projectItems[i].image; track image) {
+                <ng-template ngbSlide>
+                  <div class="carousel-img-wrapper">
+                    <img
                 src="assets/images/{{ projectItem.projectId }}/{{
                   image.imageName
                 }}.png"
-                alt="GitHub Actions"
-              />
-            </div>
-            <div class="carousel-caption">
-              <h3>{{ image.captionHead }}</h3>
-            </div>
-          </ng-template>
-        </ngb-carousel>
-      </div>
-      <!--End slideshow -->
-
-      <!-- ngIf there's only 1 image, disable slideshow -->
-      <div *ngIf="projectItems[i].image.length == 1">
-        <div *ngFor="let image of projectItems[i].image">
-          <img
+                      alt="GitHub Actions"
+                      />
+                  </div>
+                  <div class="carousel-caption">
+                    <h3>{{ image.captionHead }}</h3>
+                  </div>
+                </ng-template>
+              }
+            </ngb-carousel>
+          </div>
+        }
+        <!--End slideshow -->
+        <!-- ngIf there's only 1 image, disable slideshow -->
+        @if (projectItems[i].image.length == 1) {
+          <div>
+            @for (image of projectItems[i].image; track image) {
+              <div>
+                <img
             src="assets/images/{{ projectItem.projectId }}/{{
               image.imageName
             }}.png"
-            alt="GitHub Actions"
-          />
+                  alt="GitHub Actions"
+                  />
+              </div>
+            }
+          </div>
+        }
+        <!-- End ngIf -->
+        <!-- Start Tags -->
+        <div class="tags">
+          @for (tag of projectItem.tags; track tag) {
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="{{ tag }}"
+              >
+              {{ tag }}
+            </button>
+          }
         </div>
-      </div>
-      <!-- End ngIf -->
-
-      <!-- Start Tags -->
-      <div class="tags">
-        <button
-          *ngFor="let tag of projectItem.tags"
-          type="button"
-          class="btn btn-dark"
-          data-toggle="tooltip"
-          data-placement="top"
-          title="{{ tag }}"
-        >
-          {{ tag }}
-        </button>
-      </div>
-      <!-- End tags -->
-
-      <p><span [innerHTML]="projectItem.description"></span></p>
-    </section>
+        <!-- End tags -->
+        <p><span [innerHTML]="projectItem.description"></span></p>
+      </section>
+    }
     <!-- End ngFor Directive-->
   </div>
 </section>

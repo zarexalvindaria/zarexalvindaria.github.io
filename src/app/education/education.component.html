@@ -5,36 +5,39 @@
       <p>{{ schoolName }}, {{ schoolAddress }}</p>
       <p>
         <strong>{{ course }}</strong
-        >, {{ major }}, {{ graduation }}
-      </p>
-      <p>
-        <strong>Latin Honor: </strong
-        >{{ honor }}
-      </p>
-    </section>
-    <div class="coursework">
-      <button
-        *ngFor="let coursework of courseworks"
-        type="button"
-        class="btn btn-dark"
-        data-toggle="tooltip"
-        data-placement="top"
-        title="{{ coursework }}"
-      >
-        {{ coursework }}
-      </button>
-    </div>
+          >, {{ major }}, {{ graduation }}
+        </p>
+        <p>
+          <strong>Latin Honor: </strong
+            >{{ honor }}
+          </p>
+        </section>
+        <div class="coursework">
+          @for (coursework of courseworks; track coursework) {
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="{{ coursework }}"
+              >
+              {{ coursework }}
+            </button>
+          }
+        </div>
 
-    <section *ngFor="let cert of certs">
-      <p>
-        <strong>{{ cert.certificateName }}</strong>
-      </p>
-      <p>{{ cert.provider }}, {{ cert.dateAcquired }}</p>
-      <p>
-        <a href="{{ cert.verificationURL }}" target="_blank">
-          {{ cert.credentialID }}</a
-        >
-      </p>
-    </section>
-  </div>
-</section>
+        @for (cert of certs; track cert) {
+          <section>
+            <p>
+              <strong>{{ cert.certificateName }}</strong>
+            </p>
+            <p>{{ cert.provider }}, {{ cert.dateAcquired }}</p>
+            <p>
+              <a href="{{ cert.verificationURL }}" target="_blank">
+                {{ cert.credentialID }}</a
+                >
+              </p>
+            </section>
+          }
+        </div>
+      </section>
