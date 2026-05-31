@@ -6,7 +6,7 @@ import { TabsComponent } from './tabs/tabs.component';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [TabsComponent]
+  standalone: false
 })
 
 export class AppComponent {
