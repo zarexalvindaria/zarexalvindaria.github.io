@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { TabsComponent } from './tabs/tabs.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +10,6 @@ import { TabsComponent } from './tabs/tabs.component';
 
 export class AppComponent {
   title = 'Zarex Alvin Daria • Portfolio';
-  tabAlignment = 'center';
   zarexalvindaria = {
     fullName: 'Zarex Alvin Daria',
     jobTitle: `Data&nbsp;Engineering • Cloud&nbsp;Native&nbsp;Application`,

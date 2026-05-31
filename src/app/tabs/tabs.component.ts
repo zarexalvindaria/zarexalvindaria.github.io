@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
-import { IgxTabsModule } from 'igniteui-angular';
+import { IgxButtonGroupComponent } from 'igniteui-angular/button-group';
+import { IgxTabContentComponent, IgxTabHeaderComponent, IgxTabHeaderLabelDirective, IgxTabItemComponent, IgxTabsComponent } from 'igniteui-angular/tabs';
 
 @Component({
     selector: 'app-tabs',
     templateUrl: './tabs.component.html',
-    imports: [IgxTabsModule]
+    imports: [IgxButtonGroupComponent, IgxTabsComponent, IgxTabItemComponent, IgxTabHeaderComponent, IgxTabHeaderLabelDirective, IgxTabContentComponent]
 })
 
 export class TabsComponent {
