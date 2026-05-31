@@ -71,7 +71,7 @@ export class AppComponent {
       {
         certificateName: 'Professional Machine Learning Engineer',
         provider: 'Google Cloud',
-        dateAcquired: '08.2024',
+        dateAcquired: '08.2025',
         credentialID: 'Credential ID e2c23fa9-b5f8-4209-bdb3-ef4da1d038aa',
         verificationURL:
           'https://www.credly.com/badges/e2c23fa9-b5f8-4209-bdb3-ef4da1d038aa',
@@ -185,7 +185,7 @@ export class AppComponent {
         provider: 'Udacity',
         dateAcquired: '11.2021',
         credentialID: 'Credential ID HZJUTKXR',
-        verificationURL: 'https://graduation.udacity.com/confirm/HZJUTKXR',
+        verificationURL: 'https://www.udacity.com/certificate/e/88f15f86-fe63-11eb-ad3d-abbacb370814',
       },
       {
         certificateName: 'Associate Reactive Developer (OutSystems 11)',
