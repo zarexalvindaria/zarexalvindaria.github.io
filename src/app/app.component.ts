@@ -185,7 +185,7 @@ export class AppComponent {
         provider: 'Udacity',
         dateAcquired: '11.2021',
         credentialID: 'Credential ID HZJUTKXR',
-        verificationURL: 'https://www.udacity.com/certificate/e/88f15f86-fe63-11eb-ad3d-abbacb370814',
+        verificationURL: 'https://confirm.udacity.com/HZJUTKXR',
       },
       {
         certificateName: 'Associate Reactive Developer (OutSystems 11)',
