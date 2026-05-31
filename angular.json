@@ -103,5 +103,8 @@
       }
     }
   },
-  "defaultProject": "zarexalvindaria"
+  "defaultProject": "zarexalvindaria",
+  "cli": {
+    "analytics": false
+  }
 }
