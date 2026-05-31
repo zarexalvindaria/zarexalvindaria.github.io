@@ -4,7 +4,6 @@ import { IgxTabsModule } from 'igniteui-angular';
 @Component({
     selector: 'app-tabs',
     templateUrl: './tabs.component.html',
-    standalone: true,
     imports: [IgxTabsModule]
 })
 

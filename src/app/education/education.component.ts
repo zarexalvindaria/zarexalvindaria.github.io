@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss'],
+    selector: 'app-education',
+    templateUrl: './education.component.html',
+    styleUrls: ['./education.component.scss'],
+    standalone: false
 })
 export class EducationComponent implements OnInit {
   @Input() schoolName = '';
