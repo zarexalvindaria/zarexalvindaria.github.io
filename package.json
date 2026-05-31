@@ -36,8 +36,8 @@
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.2.11",
-    "@angular/cli": "^15.2.11",
+    "@angular-devkit/build-angular": "^16.2.16",
+    "@angular/cli": "^16.2.16",
     "@angular/compiler-cli": "^21.2.15",
     "@igniteui/angular-schematics": "~13.2.920",
     "@types/hammerjs": "^2.0.40",
